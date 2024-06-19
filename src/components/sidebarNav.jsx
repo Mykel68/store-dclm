@@ -11,7 +11,7 @@ const Sidebar = () => {
     return pathname === path;
   };
   return (
-    <div className="hidden border-r bg-[#1F2B4E] md:block">
+    <div className="hidden border-r bg-[#1F2B4E] md:block ">
       <div className="flex h-full max-h-screen flex-col gap-2">
         <div className="flex h-14 items-center  px-4 lg:h-[60px] lg:px-6">
           <Link
@@ -25,10 +25,10 @@ const Sidebar = () => {
           <nav className="grid items-start px-2 text-sm font-medium lg:px-4 gap-1">
             <Link
               href="/dashboard"
-              className={`flex items-center gap-3 rounded-lg px-3 py-2 text-white transition-all ${
+              className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-all ${
                 isActive("/dashboard")
-                  ? "bg-[#D4E8FA] text-black"
-                  : "hover:bg-[#D4E8FA]/20 hover:text-white"
+                  ? "bg-[#D4E8FA] text-slate-900"
+                  : "hover:bg-[#D4E8FA]/20   text-white "
               }`}
             >
               <Home className="h-4 w-4" />
@@ -36,10 +36,10 @@ const Sidebar = () => {
             </Link>
             <Link
               href="/product"
-              className={`flex items-center gap-3 rounded-lg px-3 py-2 text-white transition-all ${
+              className={`flex items-center gap-3 rounded-lg px-3 py-2  transition-all ${
                 isActive("/product")
-                  ? "bg-[#D4E8FA] text-black"
-                  : "hover:bg-[#D4E8FA]/20 hover:text-white"
+                  ? "bg-[#D4E8FA] text-slate-900"
+                  : "hover:bg-[#D4E8FA]/20 text-white"
               }`}
             >
               <ShoppingCart className="h-4 w-4" />
@@ -47,10 +47,10 @@ const Sidebar = () => {
             </Link>
             <Link
               href="/project"
-              className={`flex items-center gap-3 rounded-lg px-3 py-2 text-white transition-all ${
+              className={`flex items-center gap-3 rounded-lg px-3 py-2  transition-all ${
                 isActive("/project")
-                  ? "bg-[#D4E8FA] text-black"
-                  : "hover:bg-[#D4E8FA]/20 hover:text-white"
+                  ? "bg-[#D4E8FA] text-slate-900"
+                  : "hover:bg-[#D4E8FA]/20 text-white"
               }`}
             >
               <Package className="h-4 w-4" />
@@ -58,10 +58,10 @@ const Sidebar = () => {
             </Link>
             <Link
               href="/store"
-              className={`flex items-center gap-3 rounded-lg px-3 py-2 text-white transition-all ${
+              className={`flex items-center gap-3 rounded-lg px-3 py-2  transition-all ${
                 isActive("/store")
-                  ? "bg-[#D4E8FA] text-black"
-                  : "hover:bg-[#D4E8FA]/20 hover:text-white"
+                  ? "bg-[#D4E8FA] text-slate-900"
+                  : "hover:bg-[#D4E8FA]/20 text-white"
               }`}
             >
               <Users className="h-4 w-4" />
@@ -69,10 +69,10 @@ const Sidebar = () => {
             </Link>
             <Link
               href="/purchase"
-              className={`flex items-center gap-3 rounded-lg px-3 py-2 text-white transition-all ${
+              className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-all ${
                 isActive("/purchase")
-                  ? "bg-[#D4E8FA] text-black"
-                  : "hover:bg-[#D4E8FA]/20 hover:text-white"
+                  ? "bg-[#D4E8FA] text-slate-900"
+                  : "hover:bg-[#D4E8FA]/20 text-white"
               }`}
             >
               <LineChart className="h-4 w-4" />
@@ -80,10 +80,10 @@ const Sidebar = () => {
             </Link>
             <Link
               href="/analytics"
-              className={`flex items-center gap-3 rounded-lg px-3 py-2 text-white transition-all ${
+              className={`flex items-center gap-3 rounded-lg px-3 py-2  transition-all ${
                 isActive("/analytics")
-                  ? "bg-[#D4E8FA] text-black"
-                  : "hover:bg-[#D4E8FA]/20 hover:text-white"
+                  ? "bg-[#D4E8FA] text-slate-900"
+                  : "hover:bg-[#D4E8FA]/20 text-white"
               }`}
             >
               <LineChart className="h-4 w-4 " />

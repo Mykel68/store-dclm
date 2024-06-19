@@ -9,7 +9,7 @@ interface UserProfileProps {
 
 const UserProfile: React.FC<UserProfileProps> = ({ username, email }) => {
   return (
-    <div className="flex gap-2 p-1 items-center justify-center">
+    <div className="flex gap-2 p-1 items-center justify-center cursor-pointer">
       <Image
         src={Img}
         alt="Admin Image"

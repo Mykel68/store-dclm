@@ -15,9 +15,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // <html lang="en">
-    //   <body className={inter.className}>{children}</body>
-    //   </html>
     <div className="grid h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr] ">
       <Sidebar />
       <div className="flex flex-col flex-1">
